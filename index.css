@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.chat {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #97f346;
+}
+
+.chat-box {
+  max-height: 300px;
+  border: 2px solid #620a13;
+  border-radius: 8px;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+/*
+Důležitá je hodnota nastavené výšky na 300 pixelů. Budeš chtít, aby od této výšky a větší docházelo ke scrollování. Jako první musíš přidat možnost scrollování dolů. Přidáš posuvník na pravé straně. Chceš říci, že pokud bude obsah v rámečku vyšší jak 300 pixelů, tak umožni scrollování. To uděláš pomocí overflow-y, které nastavíš na scroll.*/
+
+.chat-box p {
+  margin-bottom: 4px;
+}
+
+.chat-box form input {
+  padding: 3px 10px;
+  outline: none;
+}
+
+.chat-box form button {
+  color: white;
+  background-color:#620a13;
+  border-radius: 8px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Stylování scroll-baru */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #620a13;
+}
